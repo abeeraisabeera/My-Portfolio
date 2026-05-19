@@ -1,57 +1,201 @@
 {
   "githubUsername": "abeeraisabeera",
   "fetchFromGitHub": true,
-  "ignoreRepos": ["Portfolio", "abeeraisabeera", "nexus-project-tracker", "My-Portfolio"],
+  "ignoreRepos": [
+    "Portfolio",
+    "abeeraisabeera",
+    "nexus-project-tracker",
+    "My-Portfolio"
+  ],
   "projects": [
     {
       "repo": "Pakistan_MutualFund_Intelligence",
-      "tags": ["ml", "fintech"],
+      "tags": [
+        "ml",
+        "fintech"
+      ],
       "category": "Fintech · Forecasting",
       "title": "Pakistan Mutual Fund Intelligence Platform",
       "highlight": null,
       "description": "Data science system to analyse, compare, and forecast mutual fund performance using ML and macroeconomic indicators. Integrates NAV history, MUFAP data, PSX indicators, and global macro signals — producing 5-year NAV forecasts, Sharpe ratio analysis, and sector allocation breakdowns.",
-      "stack": ["Python", "Prophet", "Scikit-learn", "Plotly", "yFinance", "BeautifulSoup"],
+      "stack": [
+        "Python",
+        "Prophet",
+        "Scikit-learn",
+        "Plotly",
+        "yFinance",
+        "BeautifulSoup"
+      ],
       "status": null
     },
     {
       "repo": "Clio-Video-Recommendation-System",
-      "tags": ["ml"],
+      "tags": [
+        "ml"
+      ],
       "category": "ML · Recommendation",
       "title": "Clio — Video Recommendation System",
       "highlight": null,
       "description": "Full-stack recommendation system using Alternating Least Squares (ALS) collaborative filtering on the MovieLens 100K dataset. Demonstrates end-to-end ML system design: data pipeline → model training → serving — the architecture patterns used in production recommendation systems.",
-      "stack": ["Python", "ALS", "Collaborative Filtering", "ML Pipeline"],
+      "stack": [
+        "Python",
+        "ALS",
+        "Collaborative Filtering",
+        "ML Pipeline"
+      ],
       "status": null
     },
     {
       "repo": "Parallel-Genetic-Algorithm",
-      "tags": ["ml"],
+      "tags": [
+        "ml"
+      ],
       "category": "ML · Optimisation",
       "title": "Parallel Genetic Algorithm for Feature Selection",
       "highlight": "⚡ 2.25× faster · 34% dimensionality reduction · 95.3% accuracy",
       "description": "Evolutionary ML framework using genetic algorithms with Python multiprocessing to automatically select optimal features for classification. Benchmarks sequential vs parallel execution on a 64-feature digit recognition dataset — cutting training time from ~45s to ~20s while improving accuracy.",
-      "stack": ["Python", "DEAP", "Scikit-learn", "Multiprocessing", "Matplotlib", "Seaborn"],
+      "stack": [
+        "Python",
+        "DEAP",
+        "Scikit-learn",
+        "Multiprocessing",
+        "Matplotlib",
+        "Seaborn"
+      ],
       "status": null
     },
     {
       "repo": null,
-      "tags": ["wip", "ml"],
+      "tags": [
+        "wip",
+        "ml"
+      ],
       "category": "AI · Generative",
       "title": "Text-to-Video Generation Engine",
       "highlight": null,
       "description": "Generative AI engine for converting structured text prompts into video sequences. Exploring diffusion-based architectures and temporal coherence techniques for practical, real-world video synthesis.",
-      "stack": ["Python", "PyTorch", "Diffusion Models", "OpenCV"],
+      "stack": [
+        "Python",
+        "PyTorch",
+        "Diffusion Models",
+        "OpenCV"
+      ],
       "status": "In Progress"
     },
     {
       "repo": null,
-      "tags": ["wip", "ml", "fintech"],
+      "tags": [
+        "wip",
+        "ml",
+        "fintech"
+      ],
       "category": "Risk · ML",
       "title": "Predictive Risk Scoring Models",
       "highlight": null,
       "description": "Data-driven risk scoring systems focused on model interpretability for business stakeholders — making outputs explainable, auditable, and actionable without sacrificing predictive power. Designed to scale from notebook to production.",
-      "stack": ["Python", "Scikit-learn", "SHAP", "FastAPI"],
+      "stack": [
+        "Python",
+        "Scikit-learn",
+        "SHAP",
+        "FastAPI"
+      ],
       "status": "In Progress"
+    },
+    {
+      "repo": "Gmail-Client-Outreach-CRM",
+      "tags": [
+        "ml"
+      ],
+      "category": "api",
+      "title": "Gmail Client Outreach CRM",
+      "highlight": null,
+      "description": "A lightweight Gmail-based CRM designed to automate and manage client outreach efficiently. Integrates with Gmail API to streamline cold emails, follow-ups, and lead tracking in one system. Built for founders, freelancers, who want, scalable outreach automation without heavy CRM overhead.",
+      "stack": [
+        "Python"
+      ],
+      "status": null,
+      "_autoAdded": true
+    },
+    {
+      "repo": "My-Portfolio",
+      "tags": [],
+      "category": "HTML",
+      "title": "My Portfolio",
+      "highlight": null,
+      "description": "New repository — add a curated description in projects.json.",
+      "stack": [
+        "HTML"
+      ],
+      "status": null,
+      "_autoAdded": true
+    },
+    {
+      "repo": "Nexus-Project-Tracker",
+      "tags": [],
+      "category": "analytics-dashboard",
+      "title": "Nexus Project Tracker",
+      "highlight": null,
+      "description": "Advanced Excel project management dashboard for multi-stakeholder initiatives. Features budget tracking (€250K), KPI dashboards, milestone monitoring, and cross-sheet formulas (AVERAGEIF, COUNTIF, IF). Demonstrates data modeling, financial analysis, and BI-style reporting in a production-grade tracker.",
+      "stack": [],
+      "status": null,
+      "_autoAdded": true
+    },
+    {
+      "repo": "Crypto_Analysiss",
+      "tags": [
+        "ml",
+        "fintech",
+        "bi"
+      ],
+      "category": "bitcoin-analysis",
+      "title": "Crypto Analysiss",
+      "highlight": null,
+      "description": "A modern cryptocurrency dashboard with interactive price charts, volume analysis, and risk-reward visualization. Built with clean UI, dark/light mode, and CSV data parsing for crypto analytics.",
+      "stack": [
+        "JavaScript"
+      ],
+      "status": null,
+      "_autoAdded": true
+    },
+    {
+      "repo": "Parse_Your_Resume",
+      "tags": [
+        "ml"
+      ],
+      "category": "ats",
+      "title": "Parse Your Resume",
+      "highlight": null,
+      "description": "AI-powered resume parser with ATS scoring, candidate ranking,  Behance portfolio scraping, and role-aware evaluation.  Built with Python, Groq LLM, and PyMuPDF.",
+      "stack": [
+        "Python"
+      ],
+      "status": null,
+      "_autoAdded": true
+    },
+    {
+      "repo": "Spotify_Wrapped_Earlyy",
+      "tags": [],
+      "category": "entropy-analysis",
+      "title": "Spotify Wrapped Earlyy",
+      "highlight": null,
+      "description": "An emotionally intelligent analytics platform built from Spotify Extended Streaming History JSON exports (2021–2026). Dark, cinematic UI with probabilistic behavioral narratives, not pseudoscience.",
+      "stack": [
+        "TypeScript"
+      ],
+      "status": null,
+      "_autoAdded": true
+    },
+    {
+      "repo": "abeeraisabeera",
+      "tags": [],
+      "category": "Open Source",
+      "title": "abeeraisabeera",
+      "highlight": null,
+      "description": "About Me",
+      "stack": [],
+      "status": null,
+      "_autoAdded": true
     }
-  ]
+  ],
+  "lastSynced": "2026-05-19T10:58:50.836Z"
 }
