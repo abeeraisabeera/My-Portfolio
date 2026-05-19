@@ -1,0 +1,57 @@
+{
+  "githubUsername": "abeeraisabeera",
+  "fetchFromGitHub": true,
+  "ignoreRepos": ["Portfolio", "abeeraisabeera", "nexus-project-tracker", "My-Portfolio"],
+  "projects": [
+    {
+      "repo": "Pakistan_MutualFund_Intelligence",
+      "tags": ["ml", "fintech"],
+      "category": "Fintech · Forecasting",
+      "title": "Pakistan Mutual Fund Intelligence Platform",
+      "highlight": null,
+      "description": "Data science system to analyse, compare, and forecast mutual fund performance using ML and macroeconomic indicators. Integrates NAV history, MUFAP data, PSX indicators, and global macro signals — producing 5-year NAV forecasts, Sharpe ratio analysis, and sector allocation breakdowns.",
+      "stack": ["Python", "Prophet", "Scikit-learn", "Plotly", "yFinance", "BeautifulSoup"],
+      "status": null
+    },
+    {
+      "repo": "Clio-Video-Recommendation-System",
+      "tags": ["ml"],
+      "category": "ML · Recommendation",
+      "title": "Clio — Video Recommendation System",
+      "highlight": null,
+      "description": "Full-stack recommendation system using Alternating Least Squares (ALS) collaborative filtering on the MovieLens 100K dataset. Demonstrates end-to-end ML system design: data pipeline → model training → serving — the architecture patterns used in production recommendation systems.",
+      "stack": ["Python", "ALS", "Collaborative Filtering", "ML Pipeline"],
+      "status": null
+    },
+    {
+      "repo": "Parallel-Genetic-Algorithm",
+      "tags": ["ml"],
+      "category": "ML · Optimisation",
+      "title": "Parallel Genetic Algorithm for Feature Selection",
+      "highlight": "⚡ 2.25× faster · 34% dimensionality reduction · 95.3% accuracy",
+      "description": "Evolutionary ML framework using genetic algorithms with Python multiprocessing to automatically select optimal features for classification. Benchmarks sequential vs parallel execution on a 64-feature digit recognition dataset — cutting training time from ~45s to ~20s while improving accuracy.",
+      "stack": ["Python", "DEAP", "Scikit-learn", "Multiprocessing", "Matplotlib", "Seaborn"],
+      "status": null
+    },
+    {
+      "repo": null,
+      "tags": ["wip", "ml"],
+      "category": "AI · Generative",
+      "title": "Text-to-Video Generation Engine",
+      "highlight": null,
+      "description": "Generative AI engine for converting structured text prompts into video sequences. Exploring diffusion-based architectures and temporal coherence techniques for practical, real-world video synthesis.",
+      "stack": ["Python", "PyTorch", "Diffusion Models", "OpenCV"],
+      "status": "In Progress"
+    },
+    {
+      "repo": null,
+      "tags": ["wip", "ml", "fintech"],
+      "category": "Risk · ML",
+      "title": "Predictive Risk Scoring Models",
+      "highlight": null,
+      "description": "Data-driven risk scoring systems focused on model interpretability for business stakeholders — making outputs explainable, auditable, and actionable without sacrificing predictive power. Designed to scale from notebook to production.",
+      "stack": ["Python", "Scikit-learn", "SHAP", "FastAPI"],
+      "status": "In Progress"
+    }
+  ]
+}
