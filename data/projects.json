@@ -208,7 +208,22 @@
       ],
       "status": null,
       "_autoAdded": true
+    },
+    {
+      "repo": "CypherSniff",
+      "tags": [
+        "ml"
+      ],
+      "category": "Python",
+      "title": "CypherSniff",
+      "highlight": null,
+      "description": "Modular Python-based Intrusion Detection System (IDS) using Scapy. Implemented packet parsing, protocol classification, bandwidth monitoring, DoS and port-scan detection, and real-time alert generation using object-oriented design principles.",
+      "stack": [
+        "Python"
+      ],
+      "status": null,
+      "_autoAdded": true
     }
   ],
-  "lastSynced": "2026-07-16T10:03:55.931Z"
+  "lastSynced": "2026-07-17T09:52:13.305Z"
 }
