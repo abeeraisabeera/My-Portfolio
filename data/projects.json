@@ -238,7 +238,23 @@
       ],
       "status": null,
       "_autoAdded": true
+    },
+    {
+      "repo": "Kasauti-",
+      "tags": [
+        "fintech",
+        "bi"
+      ],
+      "category": "ab-testing",
+      "title": "Kasauti ",
+      "highlight": null,
+      "description": "Kasauti is a production-style experimentation & product analytics platform. Analysts generate realistic synthetic A/B datasets for food delivery and banking / fintech, run full statistical evaluation, inspect decision-ready charts, and export a report that reads like an internal Product Analytics memo ",
+      "stack": [
+        "TypeScript"
+      ],
+      "status": null,
+      "_autoAdded": true
     }
   ],
-  "lastSynced": "2026-08-05T10:29:36.081Z"
+  "lastSynced": "2026-08-06T10:33:35.786Z"
 }
