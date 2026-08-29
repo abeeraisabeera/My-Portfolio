@@ -254,7 +254,22 @@
       ],
       "status": null,
       "_autoAdded": true
+    },
+    {
+      "repo": "Hydrosight",
+      "tags": [
+        "ml"
+      ],
+      "category": "Python",
+      "title": "Hydrosight",
+      "highlight": null,
+      "description": "FortyGuard thermal insight → modeled water & carbon for AI workloads Observe-first research prototype · FortyGuard Hackathon 2026",
+      "stack": [
+        "Python"
+      ],
+      "status": null,
+      "_autoAdded": true
     }
   ],
-  "lastSynced": "2026-08-28T19:50:32.681Z"
+  "lastSynced": "2026-08-29T13:32:59.767Z"
 }
