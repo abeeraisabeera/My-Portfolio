@@ -269,7 +269,38 @@
       ],
       "status": null,
       "_autoAdded": true
+    },
+    {
+      "repo": "FraudLab",
+      "tags": [
+        "ml"
+      ],
+      "category": "Python",
+      "title": "FraudLab",
+      "highlight": null,
+      "description": "New repository — add a curated description in projects.json.",
+      "stack": [
+        "Python"
+      ],
+      "status": null,
+      "_autoAdded": true
+    },
+    {
+      "repo": "TouchStone",
+      "tags": [
+        "fintech",
+        "bi"
+      ],
+      "category": "ab-testing",
+      "title": "TouchStone",
+      "highlight": null,
+      "description": "The Touchstone Kasauti is a production-style experimentation & product analytics platform. Analysts generate realistic synthetic A/B datasets for food delivery and banking / fintech, run full statistical evaluation, inspect decision-ready charts, and export a report that reads like an internal Product Analytics memo ",
+      "stack": [
+        "TypeScript"
+      ],
+      "status": null,
+      "_autoAdded": true
     }
   ],
-  "lastSynced": "2026-09-01T12:59:23.728Z"
+  "lastSynced": "2026-09-02T12:28:12.106Z"
 }
