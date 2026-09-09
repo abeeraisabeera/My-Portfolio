@@ -315,7 +315,22 @@
       ],
       "status": null,
       "_autoAdded": true
+    },
+    {
+      "repo": "Rag-Research-Assistant",
+      "tags": [
+        "ml"
+      ],
+      "category": "Jupyter Notebook",
+      "title": "Rag Research Assistant",
+      "highlight": null,
+      "description": "Retrieval-Augmented Generation pipeline that answers questions from a PDF research corpus using FAISS vector search, Sentence-Transformers embeddings, and Groq LLM inference.",
+      "stack": [
+        "Jupyter Notebook"
+      ],
+      "status": null,
+      "_autoAdded": true
     }
   ],
-  "lastSynced": "2026-09-08T12:33:30.755Z"
+  "lastSynced": "2026-09-09T12:39:19.602Z"
 }
