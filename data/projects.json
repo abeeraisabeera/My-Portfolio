@@ -341,7 +341,22 @@
       "stack": [],
       "status": null,
       "_autoAdded": true
+    },
+    {
+      "repo": "Tabnet_-_Conventional_Tabular_ML_Baselines",
+      "tags": [
+        "ml"
+      ],
+      "category": "attention",
+      "title": "Tabnet   Conventional Tabular ML Baselines",
+      "highlight": null,
+      "description": "A study project exploring TabNet for customer churn prediction, with a focus on understanding its performance, class-imbalance behavior, and feature-level interpretability.",
+      "stack": [
+        "Jupyter Notebook"
+      ],
+      "status": null,
+      "_autoAdded": true
     }
   ],
-  "lastSynced": "2026-09-16T13:01:44.234Z"
+  "lastSynced": "2026-09-17T12:59:15.877Z"
 }
