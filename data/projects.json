@@ -356,7 +356,18 @@
       ],
       "status": null,
       "_autoAdded": true
+    },
+    {
+      "repo": "red_queen",
+      "tags": [],
+      "category": "Open Source",
+      "title": "red queen",
+      "highlight": null,
+      "description": "A rigorous longitudinal analysis system within wearing a vampire costume.",
+      "stack": [],
+      "status": null,
+      "_autoAdded": true
     }
   ],
-  "lastSynced": "2026-09-30T14:31:30.544Z"
+  "lastSynced": "2026-10-01T15:01:13.196Z"
 }
