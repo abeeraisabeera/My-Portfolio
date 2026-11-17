@@ -22,93 +22,173 @@
   "projects": [
     {
       "repo": "Hydrosight",
-      "tags": ["ml", "ai", "featured"],
+      "tags": [
+        "ml",
+        "ai",
+        "featured"
+      ],
       "category": "AI Infra · Climate",
       "title": "HydroSight",
       "highlight": "FortyGuard Hackathon 2026 · Observe-first research prototype",
       "description": "Maps live FortyGuard thermal conditions across AI sites, then models water and carbon for a workload and ranks cooler / less water-intensive site × hour windows — with honest LIVE / last-TCM / ASSUMED provenance labels.",
-      "stack": ["Next.js", "FastAPI", "FortyGuard", "Leaflet", "Python"],
+      "stack": [
+        "Next.js",
+        "FastAPI",
+        "FortyGuard",
+        "Leaflet",
+        "Python"
+      ],
       "status": null
     },
     {
       "repo": "TouchStone",
-      "tags": ["ml", "fintech", "featured"],
+      "tags": [
+        "ml",
+        "fintech",
+        "featured"
+      ],
       "category": "Experimentation · Stats",
       "title": "TouchStone (Kasauti)",
       "highlight": "A/B lab for food delivery & fintech · ship-or-stop decisions",
       "description": "Production-style experimentation workstation: generate synthetic A/B datasets, run statistical evaluation (z-tests, CIs, effect sizes), inspect decision-ready charts, and export a Product Analytics-style memo.",
-      "stack": ["Next.js", "FastAPI", "Recharts", "TypeScript", "Python"],
+      "stack": [
+        "Next.js",
+        "FastAPI",
+        "Recharts",
+        "TypeScript",
+        "Python"
+      ],
       "status": null
     },
     {
       "repo": "FraudLab",
-      "tags": ["ml", "fintech", "featured"],
+      "tags": [
+        "ml",
+        "fintech",
+        "featured"
+      ],
       "category": "Fraud · Explainability",
       "title": "FraudLab",
       "highlight": "Evidence before automation · ALLOW / REVIEW / BLOCK",
       "description": "Demo workstation that builds synthetic payment data, scores fraud risk with an explainable EBM model, and applies clear policy rules — every decision ships with feature-level evidence.",
-      "stack": ["Next.js", "FastAPI", "EBM", "Python"],
+      "stack": [
+        "Next.js",
+        "FastAPI",
+        "EBM",
+        "Python"
+      ],
       "status": null
     },
     {
       "repo": "Tabnet_-_Conventional_Tabular_ML_Baselines",
-      "tags": ["ml", "featured"],
+      "tags": [
+        "ml",
+        "featured"
+      ],
       "category": "Tabular DL · Research",
       "title": "TabNet vs Tabular Baselines",
       "highlight": "Telco churn · interpretability study",
       "description": "Study project comparing TabNet (standard and class-weighted) against Logistic Regression, Random Forest, and XGBoost on the Telco Customer Churn dataset, with focus on class imbalance and feature-level explanations.",
-      "stack": ["TabNet", "XGBoost", "Scikit-learn", "Python"],
+      "stack": [
+        "TabNet",
+        "XGBoost",
+        "Scikit-learn",
+        "Python"
+      ],
       "status": null
     },
     {
       "repo": "Rag-Research-Assistant",
-      "tags": ["ml", "ai", "featured"],
+      "tags": [
+        "ml",
+        "ai",
+        "featured"
+      ],
       "category": "RAG · LLMs",
       "title": "RAG Research Assistant",
       "highlight": "PDF corpus → FAISS → grounded answers",
       "description": "Retrieval-Augmented Generation pipeline that answers questions from a PDF research corpus using Sentence-Transformers embeddings, FAISS vector search, and Groq LLM inference — answers constrained to retrieved context.",
-      "stack": ["FAISS", "Sentence-Transformers", "Groq", "PyMuPDF", "MLflow"],
+      "stack": [
+        "FAISS",
+        "Sentence-Transformers",
+        "Groq",
+        "PyMuPDF",
+        "MLflow"
+      ],
       "status": null
     },
     {
       "repo": "Parse_Your_Resume",
-      "tags": ["ml", "ai", "featured"],
+      "tags": [
+        "ml",
+        "ai",
+        "featured"
+      ],
       "category": "NLP · Recruiting",
       "title": "Parse Your Resume",
       "highlight": "ATS scoring · candidate ranking · live demo",
       "description": "AI-powered resume parser with multi-engine PDF extraction, hybrid rule + Groq LLM parsing, role-aware ATS scoring, and a ranked candidate dashboard — FastAPI on Hugging Face Spaces, frontend on Vercel, Neon PostgreSQL.",
-      "stack": ["Python", "FastAPI", "Groq", "PyMuPDF", "Neon"],
+      "stack": [
+        "Python",
+        "FastAPI",
+        "Groq",
+        "PyMuPDF",
+        "Neon"
+      ],
       "status": "Deployed"
     },
     {
       "repo": "Parallel-Genetic-Algorithm",
-      "tags": ["ml"],
+      "tags": [
+        "ml"
+      ],
       "category": "ML · Optimisation",
       "title": "Parallel Genetic Algorithm for Feature Selection",
       "highlight": "2.25× faster · ~34% dimensionality reduction · 95.3% accuracy (Digits)",
       "description": "Evolutionary feature selection with DEAP and Python multiprocessing. Benchmarked sequential vs parallel GA on the Digits dataset (64 features).",
-      "stack": ["DEAP", "Scikit-learn", "Multiprocessing", "Python"],
+      "stack": [
+        "DEAP",
+        "Scikit-learn",
+        "Multiprocessing",
+        "Python"
+      ],
       "status": null
     },
     {
       "repo": "Clio-Video-Recommendation-System",
-      "tags": ["ml"],
+      "tags": [
+        "ml"
+      ],
       "category": "ML · Recommendation",
       "title": "CLIO — Video Recommendation System",
       "highlight": "Capstone accessible component · ALS · Flask + Next.js",
       "description": "Independently accessible piece of the CLIO capstone: collaborative filtering with ALS, Flask rankings API, and a Next.js UI for feedback. The full advertising platform (incl. text-to-video) was an academic demo — not a live hosted product.",
-      "stack": ["implicit ALS", "Flask", "Next.js", "Python"],
+      "stack": [
+        "implicit ALS",
+        "Flask",
+        "Next.js",
+        "Python"
+      ],
       "status": "Academic component"
     },
     {
       "repo": "Pakistan_MutualFund_Intelligence",
-      "tags": ["ml", "fintech"],
+      "tags": [
+        "ml",
+        "fintech"
+      ],
       "category": "Fintech · Forecasting",
       "title": "Pakistan Mutual Fund Intelligence Platform",
       "highlight": null,
       "description": "Analyse, compare, and forecast mutual fund performance using ML and macroeconomic indicators — NAV history, MUFAP data, PSX signals, and 5-year NAV forecasts.",
-      "stack": ["Python", "Prophet", "Scikit-learn", "Plotly"],
+      "stack": [
+        "Python",
+        "Prophet",
+        "Scikit-learn",
+        "Plotly"
+      ],
       "status": null
     }
-  ]
+  ],
+  "lastSynced": "2026-11-17T17:18:33.208Z"
 }
