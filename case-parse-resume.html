@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F7F5F0" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <title>Parse Your Resume — Case Study · Abeera Tahir Chaudhary</title>
+  <meta name="description" content="Parse Your Resume — AI-powered resume parsing, ATS scoring, and candidate ranking with Groq, FastAPI, and Neon." />
+  <meta name="author" content="Abeera Tahir Chaudhary" />
+  <link rel="canonical" href="https://abeeraisabeera.github.io/My-Portfolio/case-parse-resume.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://abeeraisabeera.github.io/My-Portfolio/case-parse-resume.html" />
+  <meta property="og:title" content="Parse Your Resume — Case Study · Abeera Tahir Chaudhary" />
+  <meta property="og:description" content="AI-powered resume parsing, ATS scoring, and candidate ranking." />
+  <meta property="og:site_name" content="Abeera Tahir Chaudhary Portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Parse Your Resume — Case Study · Abeera Tahir Chaudhary" />
+  <meta name="twitter:description" content="AI-powered resume parsing, ATS scoring, and candidate ranking." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="css/portfolio.css" />
+</head>
+<body class="page" data-page="case-studies.html">
+<nav class="site-nav" id="siteNav" aria-label="Primary">
+  <a class="nav-logo" href="index.html">ATC.</a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="case-studies.html" class="is-active" aria-current="page">Case Studies</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="now.html">Now</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<nav class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Mobile">
+  <a href="about.html">About</a>
+  <a href="experience.html">Experience</a>
+  <a href="skills.html">Skills</a>
+  <a href="case-studies.html" class="is-active" aria-current="page">Case Studies</a>
+  <a href="projects.html">Projects</a>
+  <a href="now.html">Now</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main class="page-main">
+<section class="page-section case-page">
+  <p class="section-label reveal"><a class="crumb" href="case-studies.html">Case Studies</a> / Parse Resume</p>
+  <nav class="case-page-nav reveal" aria-label="Case studies">
+    <a href="case-hydrosight.html">HydroSight</a>
+    <a href="case-clio.html">CLIO</a>
+    <a href="case-touchstone.html">TouchStone</a>
+    <a href="case-fraudlab.html">FraudLab</a>
+    <a href="case-tabnet.html">TabNet</a>
+    <a href="case-rag.html">RAG Assistant</a>
+    <a href="case-parse-resume.html" class="is-active">Parse Resume</a>
+  </nav>
+  <article class="case-study case-study-solo reveal" id="case-parse-resume">
+    <div class="case-hero">
+      <div class="case-meta">
+        <span class="case-tag">NLP · Recruiting</span>
+        <span class="case-status">Deployed · Vercel + HF Spaces</span>
+      </div>
+      <h3>Parse Your Resume — ATS scoring &amp; candidate ranking</h3>
+      <p class="case-lede">Production-minded resume system that extracts structured candidate data from PDFs, scores applicants across role-aware dimensions, and ranks them for recruitment pipelines — with a FastAPI backend and a Vercel dashboard.</p>
+    </div>
+    <div class="case-body">
+      <div class="case-grid">
+        <div class="case-block">
+          <h4>Problem</h4>
+          <p>Recruiters drown in unstructured PDFs. Manual shortlisting is slow, inconsistent, and weak on scanned or creative-portfolio resumes. Teams need structured fields, comparable scores, and a ranking view — not another black-box “AI score.”</p>
+        </div>
+        <div class="case-block">
+          <h4>Motivation</h4>
+          <p>Build a split architecture that can actually run: reliable PDF ingestion with OCR fallback, hybrid rule + LLM parsing, role-aware weighting, and a dashboard that shortlists and exports candidates.</p>
+        </div>
+        <div class="case-block">
+          <h4>Approach</h4>
+          <ul>
+            <li>Multi-engine extraction: PyMuPDF → pdfplumber → OCR (Tesseract) fallback</li>
+            <li>Hybrid parsing: regex / rules + Groq LLM semantic enrichment</li>
+            <li>Role-aware scoring (e.g. design, marketing, general) with ranking scores</li>
+            <li>Behance portfolio enrichment for creative candidates</li>
+            <li>Retry logic with exponential backoff for rate-limited LLM calls</li>
+            <li>REST API: parse, batch parse, candidates, shortlist, delete</li>
+          </ul>
+        </div>
+        <div class="case-block">
+          <h4>Deployment (as documented)</h4>
+          <ul>
+            <li><strong>Frontend:</strong> Vercel candidate dashboard</li>
+            <li><strong>Backend:</strong> FastAPI on Hugging Face Spaces (Docker)</li>
+            <li><strong>Database:</strong> Neon PostgreSQL</li>
+            <li><strong>LLM:</strong> Groq API</li>
+            <li>Cold starts possible after HF inactivity; OCR needs Tesseract in the runtime</li>
+          </ul>
+        </div>
+      </div>
+      <h4 class="section-label" style="margin-bottom:0.75rem">Architecture</h4>
+      <div class="arch-diagram" aria-label="Parse Your Resume architecture">
+        <div class="arch-flow">
+          <span class="arch-node">PDF upload</span>
+          <span class="arch-arrow">→</span>
+          <span class="arch-node">Extract · OCR</span>
+          <span class="arch-arrow">→</span>
+          <span class="arch-node">Rules + Groq</span>
+          <span class="arch-arrow">→</span>
+          <span class="arch-node">Scoring engine</span>
+          <span class="arch-arrow">→</span>
+          <span class="arch-node">Neon store</span>
+          <span class="arch-arrow">→</span>
+          <span class="arch-node">Ranked dashboard</span>
+        </div>
+      </div>
+      <div class="case-grid">
+        <div class="case-block">
+          <h4>Output shape</h4>
+          <p>Structured candidate JSON (name, email, skills, experience, seniority, ranking score) for pipeline use — plus shortlist controls in the UI.</p>
+        </div>
+        <div class="case-block">
+          <h4>Technology</h4>
+          <p>Python, FastAPI, PyMuPDF, pdfplumber, Tesseract OCR, BeautifulSoup, Groq, Neon PostgreSQL, Vercel frontend. Repo documents <strong>170+ test cases</strong>.</p>
+        </div>
+      </div>
+      <div class="case-actions">
+        <a class="btn btn-primary btn-sm" href="https://github.com/abeeraisabeera/Parse_Your_Resume" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="btn btn-ghost btn-sm" href="https://digitalis-global-resume-rank.vercel.app/" target="_blank" rel="noopener">Live demo</a>
+        <a class="btn btn-ghost btn-sm" href="https://huggingface.co/spaces/abzyvantae/Parse_Your_Resume_Backend" target="_blank" rel="noopener">API backend</a>
+      </div>
+    </div>
+  </article>
+  <div class="case-pager reveal">
+    <a href="case-studies.html">← All case studies</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 Abeera Tahir Chaudhary · Data Scientist · Machine Learning · AI Systems · Pakistan</p>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -26,7 +26,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: abeeraisabeera
-          IGNORE_REPOS: 'Portfolio'
+          IGNORE_REPOS: 'Portfolio,My-Portfolio,abeeraisabeera,nexus-project-tracker,Nexus-Project-Tracker,Mark-It-Down_App,FinishLine,red_queen,Kasauti-,Crypto_Analysiss,Spotify_Wrapped_Earlyy,Parse_Your_Resume,Pakistan_Corruption_Atlas,Gmail-Client-Outreach-CRM,CypherSniff,rag-research-assistant'
         run: node .github/scripts/sync-projects.mjs
 
       - name: Commit if changed

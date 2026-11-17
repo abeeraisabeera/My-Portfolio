@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F7F5F0" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <title>FraudLab — Case Study · Abeera Tahir Chaudhary</title>
+  <meta name="description" content="FraudLab — explainable fraud scoring" />
+  <meta name="author" content="Abeera Tahir Chaudhary" />
+  <link rel="canonical" href="https://abeeraisabeera.github.io/My-Portfolio/case-fraudlab.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://abeeraisabeera.github.io/My-Portfolio/case-fraudlab.html" />
+  <meta property="og:title" content="FraudLab — Case Study · Abeera Tahir Chaudhary" />
+  <meta property="og:description" content="FraudLab — explainable fraud scoring" />
+  <meta property="og:site_name" content="Abeera Tahir Chaudhary Portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="FraudLab — Case Study · Abeera Tahir Chaudhary" />
+  <meta name="twitter:description" content="FraudLab — explainable fraud scoring" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="css/portfolio.css" />
+  
+</head>
+<body class="page" data-page="case-studies.html">
+<nav class="site-nav" id="siteNav" aria-label="Primary">
+  <a class="nav-logo" href="index.html">ATC.</a>
+    <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="case-studies.html" class="is-active" aria-current="page">Case Studies</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="now.html">Now</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<nav class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Mobile">
+  <a href="about.html">About</a>
+  <a href="experience.html">Experience</a>
+  <a href="skills.html">Skills</a>
+  <a href="case-studies.html" class="is-active" aria-current="page">Case Studies</a>
+  <a href="projects.html">Projects</a>
+  <a href="now.html">Now</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main class="page-main">
+<section class="page-section case-page">
+  <p class="section-label reveal"><a class="crumb" href="case-studies.html">Case Studies</a> / FraudLab</p>
+  <nav class="case-page-nav reveal" aria-label="Case studies"><a href="case-hydrosight.html">HydroSight</a><a href="case-clio.html">CLIO</a><a href="case-touchstone.html">TouchStone</a><a href="case-fraudlab.html" class="is-active">FraudLab</a><a href="case-tabnet.html">TabNet</a><a href="case-rag.html">RAG Assistant</a></nav>
+  <article class="case-study case-study-solo reveal" id="case-fraudlab">
+  <div class="case-hero">
+      <div class="case-meta">
+        <span class="case-tag">Fraud · Explainability</span>
+        <span class="case-status">Learning / demo workstation</span>
+      </div>
+      <h3>FraudLab — evidence before automation</h3>
+      <p class="case-lede">A demo app that builds synthetic payment data, scores fraud risk with an explainable model, and applies clear ALLOW / REVIEW / BLOCK rules — every decision comes with evidence for why a transaction was flagged.</p>
+    </div>
+    <div class="case-body">
+      <div class="case-grid">
+        <div class="case-block">
+          <h4>Problem</h4>
+          <p>Real fraud systems often return “blocked” with no explanation. FraudLab teaches a safer pattern: predict risk → apply rules → show evidence.</p>
+        </div>
+        <div class="case-block">
+          <h4>Pipeline</h4>
+          <p><strong>generate → features → EBM → calibration → policy → evidence</strong>. Same seed yields the same synthetic dataset for reproducible experiments.</p>
+        </div>
+        <div class="case-block">
+          <h4>Architecture</h4>
+          <p>Next.js frontend calls a FastAPI backend. The <code>fraud/</code> Python package owns features, model, policy, and evidence steps. Both UI and API must run together.</p>
+        </div>
+        <div class="case-block">
+          <h4>Limitations</h4>
+          <ul>
+            <li>Not a real bank system — uses synthetic transactions</li>
+            <li>Designed for teaching / demo evaluation, not live payment rails</li>
+          </ul>
+        </div>
+      </div>
+      <div class="arch-diagram" aria-label="FraudLab pipeline">
+        <div class="arch-flow">
+          <span class="arch-node">Synthetic payments</span>
+          <span class="arch-arrow">→</span>
+          <span class="arch-node">Features</span>
+          <span class="arch-arrow">→</span>
+          <span class="arch-node">EBM model</span>
+          <span class="arch-arrow">→</span>
+          <span class="arch-node">Policy rules</span>
+          <span class="arch-arrow">→</span>
+          <span class="arch-node">Evidence UI</span>
+        </div>
+      </div>
+      <div class="case-actions">
+        <a class="btn btn-primary btn-sm" href="https://github.com/abeeraisabeera/FraudLab" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+  </article>
+  <div class="case-pager reveal">
+    <a href="case-studies.html">← All case studies</a>
+  </div>
+</section>
+</main>
+
+
+<footer>
+  <p>© 2026 Abeera Tahir Chaudhary · Data Scientist · Machine Learning · AI Systems · Pakistan</p>
+</footer>
+
+
+<script src="js/main.js" defer></script>
+
+</body>
+</html>

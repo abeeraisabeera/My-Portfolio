@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#F7F5F0" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <title>TabNet — Case Study · Abeera Tahir Chaudhary</title>
+  <meta name="description" content="TabNet vs conventional tabular baselines" />
+  <meta name="author" content="Abeera Tahir Chaudhary" />
+  <link rel="canonical" href="https://abeeraisabeera.github.io/My-Portfolio/case-tabnet.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://abeeraisabeera.github.io/My-Portfolio/case-tabnet.html" />
+  <meta property="og:title" content="TabNet — Case Study · Abeera Tahir Chaudhary" />
+  <meta property="og:description" content="TabNet vs conventional tabular baselines" />
+  <meta property="og:site_name" content="Abeera Tahir Chaudhary Portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="TabNet — Case Study · Abeera Tahir Chaudhary" />
+  <meta name="twitter:description" content="TabNet vs conventional tabular baselines" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="css/portfolio.css" />
+  
+</head>
+<body class="page" data-page="case-studies.html">
+<nav class="site-nav" id="siteNav" aria-label="Primary">
+  <a class="nav-logo" href="index.html">ATC.</a>
+    <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="case-studies.html" class="is-active" aria-current="page">Case Studies</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="now.html">Now</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<nav class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Mobile">
+  <a href="about.html">About</a>
+  <a href="experience.html">Experience</a>
+  <a href="skills.html">Skills</a>
+  <a href="case-studies.html" class="is-active" aria-current="page">Case Studies</a>
+  <a href="projects.html">Projects</a>
+  <a href="now.html">Now</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main class="page-main">
+<section class="page-section case-page">
+  <p class="section-label reveal"><a class="crumb" href="case-studies.html">Case Studies</a> / TabNet</p>
+  <nav class="case-page-nav reveal" aria-label="Case studies"><a href="case-hydrosight.html">HydroSight</a><a href="case-clio.html">CLIO</a><a href="case-touchstone.html">TouchStone</a><a href="case-fraudlab.html">FraudLab</a><a href="case-tabnet.html" class="is-active">TabNet</a><a href="case-rag.html">RAG Assistant</a></nav>
+  <article class="case-study case-study-solo reveal" id="case-tabnet">
+  <div class="case-hero">
+      <div class="case-meta">
+        <span class="case-tag">Tabular DL · Research</span>
+        <span class="case-status">Study project</span>
+      </div>
+      <h3>TabNet vs conventional tabular baselines</h3>
+      <p class="case-lede">An interpretability-focused study: can TabNet predict customer churn on the Telco dataset while providing useful feature-level explanations — and how does it behave under class imbalance versus Logistic Regression, Random Forest, and XGBoost?</p>
+    </div>
+    <div class="case-body">
+      <div class="case-grid">
+        <div class="case-block">
+          <h4>Dataset</h4>
+          <p><strong>Telco Customer Churn</strong> — 7,043 customers, 19 predictors after removing customer ID, binary churn target (~26.5% churn rate). Fixed 80/20 stratified train-test split.</p>
+        </div>
+        <div class="case-block">
+          <h4>Experimentation</h4>
+          <ul>
+            <li>Baselines: Logistic Regression, Random Forest, XGBoost (45 processed features via scaling + one-hot)</li>
+            <li>TabNet &amp; Weighted TabNet on the original 19 features with categorical embeddings</li>
+            <li>Focus on class-imbalance behavior and attention-based feature masks</li>
+          </ul>
+        </div>
+        <div class="case-block">
+          <h4>Why it matters</h4>
+          <p>Most tabular work defaults to tree ensembles. This study isolates whether sequential attention in TabNet adds interpretability value on a classic churn problem — without overselling production readiness.</p>
+        </div>
+        <div class="case-block">
+          <h4>Next iteration</h4>
+          <p>Deeper reporting of calibrated metrics across imbalance strategies, and clearer visualization of TabNet attention masks alongside SHAP/feature importances from baselines.</p>
+        </div>
+      </div>
+      <table class="compare-table" aria-label="Models evaluated">
+        <thead>
+          <tr><th>Model family</th><th>Role in study</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Logistic Regression</td><td>Linear, interpretable baseline</td></tr>
+          <tr><td>Random Forest</td><td>Tree ensemble baseline</td></tr>
+          <tr><td>XGBoost</td><td>Gradient-boosted tabular baseline</td></tr>
+          <tr><td>TabNet / Weighted TabNet</td><td>Attention-based tabular DL + class weighting</td></tr>
+        </tbody>
+      </table>
+      <div class="case-actions">
+        <a class="btn btn-primary btn-sm" href="https://github.com/abeeraisabeera/Tabnet_-_Conventional_Tabular_ML_Baselines" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+  </article>
+  <div class="case-pager reveal">
+    <a href="case-studies.html">← All case studies</a>
+  </div>
+</section>
+</main>
+
+
+<footer>
+  <p>© 2026 Abeera Tahir Chaudhary · Data Scientist · Machine Learning · AI Systems · Pakistan</p>
+</footer>
+
+
+<script src="js/main.js" defer></script>
+
+</body>
+</html>

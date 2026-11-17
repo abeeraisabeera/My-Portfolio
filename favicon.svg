@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Abeera ATC">
+  <!-- cream rounded tile -->
+  <rect width="64" height="64" rx="14" fill="#F7F5F0"/>
+  <!-- soft border -->
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#1B4F8A" stroke-opacity="0.14" stroke-width="1.5"/>
+  <!-- tiny constellation -->
+  <path d="M12 50 L28 34 L44 22 L52 14" fill="none" stroke="#1B4F8A" stroke-opacity="0.28" stroke-width="1.25" stroke-linecap="round" stroke-dasharray="2 3"/>
+  <circle cx="12" cy="50" r="2.6" fill="#1B4F8A"/>
+  <circle cx="28" cy="34" r="2" fill="#00C2D4"/>
+  <circle cx="44" cy="22" r="2.4" fill="#1B4F8A"/>
+  <circle cx="52" cy="14" r="1.6" fill="#6B5CFF"/>
+  <!-- serif A -->
+  <text x="33" y="48" text-anchor="middle" font-family="Georgia, 'Times New Roman', Times, serif" font-size="30" font-weight="600" fill="#161412">A</text>
+</svg>
